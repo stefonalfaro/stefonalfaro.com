@@ -23,7 +23,7 @@ const greeting = {
   username: "Stefon Alfaro",
   title: "Hi, I'm Stefon",
   subTitle: emoji(
-    "I develop software to preserve human cognition. I integrate into existing workflows. I look for activities where AI is demonstrably superior to humans. I look for tasks that can be shortened. I create solutions that proxy business value and cognitive labor."
+    "I develop software to preserve human cognition. I will integrate into your existing workflows. I look for activities where AI is demonstrably superior to humans. I look for tasks that can be shortened by automation. I create solutions that proxy business value and cognitive labor."
   ),
   resumeLink:
     "", // Set to empty to hide the button
@@ -49,50 +49,63 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "I am Full Stack Software Engineer building Enterprise grade applications with C#, Angular, and some other libraries and frameworks. I have worked with Third-Party Logistics, Warehousing, Transportation, and Software Development companies.",
+  subTitle: "I am Full Stack Software Engineer building enterprise grade applications with C#, Angular, and some other libraries and frameworks. I have worked with Third-Party Logistics, Warehousing, Transportation, and Software Development companies.",
   skills: [
-    emoji("⚡ Software Architecture transforming Product Requirements into the Features and Abstractions and how they relate to each other."),
-    emoji("⚡ X12 EDI, API Integrations, Business Automations"),
-    emoji("⚡ C#, Angular, SQL, .NET WebAPI, X12 EDI, BizTalk, SignalR, Azure, Windows Servers, Crystal Reports, Report Builder, WMS, TMS"),
-    emoji("⚡ Tools: Azure Cloud, Visual Studios, GIT, SQL Server Management Studio, SQL Server  Reporting  Services,   Report  Builder,   Crystal  Reports,   BizTalk  Server,  VS  Code,  IIS  Server,  GitHub,  cPanel,  WordPress,  JIRA,  BitBucket"),
-    emoji("⚡ Databases: SQL Server, MySQL, Firestore, and CosmosDB")
+    emoji("⚡ [Artificial Intelligence] OpenAI GPT4 and HuggingFace"),
+    emoji("⚡ [Software Architecture] Team Lead transforming Product Requirements into the Features and Abstractions and how they relate to each other. Creating the engineering plans including Sequence Diagrams and Entity Relationship Diagrams"),
+    emoji("⚡ [Business Automations] X12 EDI and API Integrations"),
+    emoji("⚡ [Languages and Frameworks] C#, Angular, SQL, .NET WebAPI, BizTalk, SignalR, Azure Cloud, Windows Servers, Crystal Reports, Report Builder"),
+    emoji("⚡ [Tools] Visual Studios, GIT, SQL Server Management Studio, SQL Server  Reporting  Services,   Report  Builder,   Crystal  Reports,   BizTalk  Server,  VS  Code,  IIS  Server,  GitHub,  cPanel,  WordPress,  JIRA,  BitBucket, Eraser.io"),
+    emoji("⚡ [Databases] SQL Server, MySQL, Firestore, and CosmosDB")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+https://fontawesome.com/icons?d=gatypellery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
+      skillName: "HTML5",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "css3",
+      skillName: "CSS3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "angular",
+      skillName: "Angular",
       fontAwesomeClassname: "fab fa-angular"
     },
     {
       skillName: "TypeScript",
-      fontAwesomeClassname: "fab fa-ts"
+      fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "sql-database",
+      skillName: "SQL",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "firebase",
+      skillName: "Firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "azure",
-      fontAwesomeClassname: "fab fa-azure"
+      skillName: "Azure",
+      fontAwesomeClassname: "fab fa-windows"
     },
     {
-      skillName: "docker",
+      skillName: "Windows Server",
+      fontAwesomeClassname: "fa fa-server"
+    },
+    {
+      skillName: "Networking",
+      fontAwesomeClassname: "fa fa-network-wired"
+    },
+    {
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "Cloudflare",
+      fontAwesomeClassname: "fab fa-cloudflare"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -101,26 +114,21 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "York University",
+      logo: require("./assets/images/yorkulogo.jpg"),
+      subHeader: "Bachelor of Computer Science",
+      duration: "September 2013 - April 2014",
+      desc: "Toronto, ON",
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Queen's University",
+      logo: require("./assets/images/queenslogo.png"),
+      subHeader: "Bachelor Computer Science",
+      duration: "September 2012 - April 2013",
+      desc: "Kingston, ON",
     }
   ]
 };
@@ -131,12 +139,12 @@ const techStack = {
   viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Backend",
+      Stack: "Physical Windows Servers",
       progressPercentage: "100%"
     },
     {
-      Stack: "Frontend",
-      progressPercentage: "70%"
+      Stack: "Azure Cloud",
+      progressPercentage: "75%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -150,11 +158,11 @@ const workExperiences = {
     {
       role: "Backend Team Leader",
       company: "PP",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("./assets/images/pplogo.jpg"),
       date: "Dec 2022 – Present",
       desc: "",
       descBullets: [
-        "Contract  to  Kaseya  for  development  and  support  of  the  MSP  software  ”audIT”.",
+        "Contract  to  Kaseya  for  development  and  support  of  major  MSP  software.",
         "Many  environments  setup  with  CI/ID  and TDD.",
         "The  backend  is  a  .NET  WebAPI  made  in  Azure  Functions  using  CosmosDB  (NoSQL)."
       ]
@@ -162,7 +170,7 @@ const workExperiences = {
     {
       role: "Systems Analyst",
       company: "DWS",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      companylogo: require("./assets/images/dwslogo.jpg"),
       date: "Mar 2018 – Apr 2020",
       desc: "",
       descBullets:[
@@ -174,7 +182,7 @@ const workExperiences = {
     {
       role: "IT Manager",
       company: "GAPP",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      companylogo: require("./assets/images/gapplogo.jpg"),
       date: "Mar 2016 – Dec 2018",
       desc: "Reporting  to  the  President  I  managed  a  40,000sqft  warehouse  being  responsible  for  all  the  network  and computer  systems  including  servers,  domains,  websites,  security  cameras,  client  integrations,  building access  control,  email  accounts,  software  licenses,  file  share,  printers,  network,  routers,  switches,  and access  points.  Developed  a  custom  coded  Warehouse  Management  System."
     }

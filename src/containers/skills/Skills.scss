@@ -7,12 +7,13 @@
 }
 
 .skills-text-div {
+  flex-grow: 3; 
   margin-left: 50px;
+  margin-bottom: 30px;
 }
 
-.skills-main-div > * {
-  flex: 1;
-  margin-bottom: 30px;
+.skills-image-div {
+  flex-grow: 1;
 }
 
 .skills-image-div > img {
@@ -24,6 +25,7 @@
   font-size: 56px;
   font-weight: 400;
 }
+
 .subTitle {
   color: $subTitle;
 }
@@ -34,6 +36,7 @@
     font-size: 40px;
   }
 }
+
 @media (max-width: 768px) {
   .skills-heading {
     font-size: 30px;
