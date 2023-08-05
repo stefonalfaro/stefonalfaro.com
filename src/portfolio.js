@@ -294,25 +294,25 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Research",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "I believe that AI, with its limitless potential and adaptability, can transcend the barriers that have long hindered human progress, leading to unprecedented increases in the quality of life for all. I devote significant time and effort to learning, exploring, and contributing to this exciting field, actively engaging in research that resonates with the hope of a brighter tomorrow.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://blog.stefonalfaro.com/2023/08/05/exploring-voice-to-voice-communication-with-large-language-models/",
+      title: "Exploring Voice to Voice Communication with AI",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "The goal was to create a system that takes voice input, converts it into text, feeds it into a tokenized LLM, and then translates the text response back into voice."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://blog.stefonalfaro.com/2023/08/05/bridging-the-digital-divide-a-journey-from-text-to-physical-interaction/",
+      title: "Enabling Interaction with the Physical World",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "Proof of concept that allows AI to physically interact with the real world. Here’s how it was achieved."
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
