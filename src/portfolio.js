@@ -310,6 +310,12 @@ const blogSection = {
       title: "Enabling Interaction with the Physical World",
       description:
         "Proof of concept that allows AI to physically interact with the real world. Here’s how it was achieved."
+    },
+    {
+      url: "https://blog.stefonalfaro.com/2023/08/06/exploring-azure-vision-giving-ai-the-eyes-to-see-the-real-world/",
+      title: "Giving AI the Eyes to See the Real World",
+      description:
+        "I embarked on an enlightening journey to allow my AI to not only see the real world but to interpret and understand it as well."
     }
   ],
   display: true // Set false to hide this section, defaults to true
