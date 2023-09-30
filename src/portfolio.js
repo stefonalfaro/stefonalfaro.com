@@ -234,61 +234,26 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Courses and Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Recent Courses and Certifications that I have done!",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Fundamentals of TinyML",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "TinyML is at the intersection of embedded Machine Learning (ML) applications, algorithms, hardware, and software. TinyML differs from mainstream machine learning (e.g., server and cloud) in that it requires not only software expertise, but also embedded-hardware expertise.",
+      image: require("./assets/images/harvardLogo.png"),
+      imageAlt: "Havard Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "HavardX TinyML1",
+          url: "https://www.harvardonline.harvard.edu/course/fundamentals-tinyml"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -299,6 +264,12 @@ const blogSection = {
     "I believe that AI, with its limitless potential and adaptability, can transcend the barriers that have long hindered human progress, leading to unprecedented increases in the quality of life for all. I devote significant time and effort to learning, exploring, and contributing to this exciting field, actively engaging in research that resonates with the hope of a brighter tomorrow.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
+    {
+      url: "https://blog.stefonalfaro.com/2023/09/21/the-cognitive-cost-of-rigid-work-hours-examining-the-consequences-in-software-development/",
+      title: "The Cognitive Cost of Rigid Work Hours",
+      description:
+        "Examining the Consequences of the 7+ hour work day in Software Development"
+    },
     {
       url: "https://blog.stefonalfaro.com/2023/08/05/exploring-voice-to-voice-communication-with-large-language-models/",
       title: "Exploring Voice to Voice Communication with AI",
