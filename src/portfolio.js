@@ -23,10 +23,10 @@ const greeting = {
   username: "Stefon Alfaro",
   title: "Hi, I'm Stefon",
   subTitle: emoji(
-    "Senior Developer for worldwide remote employment. Frontend development with Angular and Backend development with .NET or Node."
+    "Senior Developer for worldwide remote employment. Seven years of general expeirence with a specialization in Angular Frontend development and .NET Backend development deployed to cloud and on-premise environments using relational and NoSQL databases."
   ),
   resumeLink:
-    "", // Set to empty to hide the button
+    "https://utfs.io/f/3ed09cae-0ea2-410d-9b6a-8dc5f49d1c27-f6dfs2.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -48,15 +48,18 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "Tech Stack",
-  subTitle: "I am Full Stack Software Engineer building enterprise grade applications with C#, Angular, and some other libraries and frameworks. I have worked with Third-Party Logistics, Warehousing, Transportation, and Software Development companies.",
+  title: "",
+  subTitle: "",
   skills: [
-    emoji("⚡ [Artificial Intelligence] OpenAI GPT4 and HuggingFace"),
-    emoji("⚡ [Software Architecture] Team Lead transforming Product Requirements into the Features and Abstractions and how they relate to each other. Creating the engineering plans including Sequence Diagrams and Entity Relationship Diagrams"),
-    emoji("⚡ [Business Automations] X12 EDI and API Integrations"),
-    emoji("⚡ [Languages and Frameworks] C#, Angular, SQL, .NET WebAPI, BizTalk, SignalR, Azure Cloud, Windows Servers, Crystal Reports, Report Builder"),
-    emoji("⚡ [Tools] Visual Studios, GIT, SQL Server Management Studio, SQL Server  Reporting  Services,   Report  Builder,   Crystal  Reports,   BizTalk  Server,  VS  Code,  IIS  Server,  GitHub,  cPanel,  WordPress,  JIRA,  BitBucket, Eraser.io"),
-    emoji("⚡ [Databases] SQL Server, MySQL, Firestore, and CosmosDB")
+    emoji("⚡ [Artificial Intelligence] OpenAI, HuggingFace, Function Calling models"),
+    emoji("⚡ [Architecture] Team Lead transforming Product Requirements into the Features and Abstractions and how they relate to each other. Creating the engineering plans including Sequence Diagrams and Entity Relationship Diagrams"),
+    emoji("⚡ [Automations] X12 EDI and API Integrations"),
+    emoji("⚡ [Languages] C#, TypeScript, SQL, Python, Rust, HTML, CSS"),
+    emoji("⚡ [Frameworks] Angular and .NET WebAPI"),
+    emoji("⚡ [Tools] Visual Studios, GIT, SQL Server Management Studio, SQL Server  Reporting  Services,   Report  Builder,   Crystal  Reports,   BizTalk  Server,  VS  Code,  IIS  Server,  GitHub,  cPanel,  WordPress,  JIRA,  BitBucket, Eraser.io, SignalR"),
+    emoji("⚡ [Databases] SQL Server, MySQL, Firestore, and CosmosDB"),
+    emoji("⚡ [Deployments] Azure Functions, IIS WebServer, Google Cloud Run, Firebase Hosting"),
+    emoji("⚡ [OS] Windows Server, Debian, Ubuntu")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -102,20 +105,20 @@ https://fontawesome.com/icons?d=gatypellery */
 // Education Section
 
 const educationInfo = {
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
   schools: [
     {
       schoolName: "York University",
-      logo: require("./assets/images/yorkulogo.jpg"),
+      logo: require("./assets/images/yorku.png"),
       subHeader: "Bachelor of Computer Science",
-      duration: "September 2013 - April 2014",
+      duration: "2013 - 2014",
       desc: "Toronto, ON",
     },
     {
       schoolName: "Queen's University",
       logo: require("./assets/images/queenslogo.png"),
       subHeader: "Bachelor Computer Science",
-      duration: "September 2012 - April 2013",
+      duration: "2012 - 2013",
       desc: "Kingston, ON",
     }
   ]
@@ -149,7 +152,7 @@ const workExperiences = {
   experience: [
     {
       role: "Backend Team Leader (1.5yr)",
-      company: "PP",
+      company: "Pioneering Programmers",
       companylogo: require("./assets/images/pplogo.jpg"),
       date: "Dec 2022 – Present",
       desc: "",
@@ -162,7 +165,7 @@ const workExperiences = {
     {
       role: "Systems Analyst (2yr)",
       company: "DWS",
-      companylogo: require("./assets/images/dwslogo.jpg"),
+      companylogo: require("./assets/images/dwslogo.png"),
       date: "2018 – 2020",
       desc: "",
       descBullets:[
@@ -174,7 +177,7 @@ const workExperiences = {
     {
       role: "Fullstack Developer (4yr)",
       company: "GAPP",
-      companylogo: require("./assets/images/gapplogo.jpg"),
+      companylogo: require("./assets/images/gapplogo.png"),
       date: "2016 – 2018, 2020 to 2022",
       desc: "Reporting  to  the  President  I  managed  a  40,000sqft  warehouse  being  responsible  for  all  the  network  and computer  systems  including  servers,  domains,  websites,  security  cameras,  client  integrations,  building access  control,  email  accounts,  software  licenses,  file  share,  printers,  network,  routers,  switches,  and access  points.  Developed  a  custom  coded  Warehouse  Management  System."
     }
@@ -193,33 +196,33 @@ const openSource = {
 
 const bigProjects = {
   title: "Professional Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/audit.webp"),
+      projectName: "audIT by Kaseya",
+      projectDesc: "In preparation for the announcement of Kaseya’s acquisition of audIT, I lead the Backend Team as we implemented many features and integrations in this sales presentation software for MSPs with thousands of active users.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Learn about audIT by Kaseya",
+          url: "https://www.auditforit.com/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/eava.webp"),
+      projectName: "EAVA AI",
+      projectDesc: "AI document management and interaction platform using open source foundational LLM and Embedding models.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Learn about EAVA",
+          url: "https://get.eava.ai/"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -253,35 +256,29 @@ const achievementSection = {
 const blogSection = {
   title: "Personal Projects",
   subtitle:
-    "I believe that AI, with its limitless potential and adaptability, can transcend the barriers that have long hindered human progress, leading to unprecedented increases in the quality of life for all. I devote significant time and effort to learning, exploring, and contributing to this exciting field, actively engaging in research that resonates with the hope of a brighter tomorrow.",
+    "",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.stefonalfaro.com/2023/09/21/the-cognitive-cost-of-rigid-work-hours-examining-the-consequences-in-software-development/",
-      title: "The Cognitive Cost of Rigid Work Hours",
+      url: "",
+      title: "",
       description:
-        "Examining the Consequences of the 7+ hour work day in Software Development"
+        ""
     },
     {
-      url: "https://blog.stefonalfaro.com/2023/08/05/exploring-voice-to-voice-communication-with-large-language-models/",
-      title: "Exploring Voice to Voice Communication with AI",
+      url: "",
+      title: "",
       description:
-        "The goal was to create a system that takes voice input, converts it into text, feeds it into a tokenized LLM, and then translates the text response back into voice."
+        ""
     },
     {
-      url: "https://blog.stefonalfaro.com/2023/08/05/bridging-the-digital-divide-a-journey-from-text-to-physical-interaction/",
-      title: "Enabling Interaction with the Physical World",
+      url: "",
+      title: "",
       description:
-        "Proof of concept that allows AI to physically interact with the real world. Here’s how it was achieved."
-    },
-    {
-      url: "https://blog.stefonalfaro.com/2023/08/06/exploring-azure-vision-giving-ai-the-eyes-to-see-the-real-world/",
-      title: "Giving AI the Eyes to See the Real World",
-      description:
-        "I embarked on an enlightening journey to allow my AI to not only see the real world but to interpret and understand it as well."
+        ""
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -319,7 +316,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open.",
+    "",
   email_address: "stefonalfaro@gmail.com"
 };
 
