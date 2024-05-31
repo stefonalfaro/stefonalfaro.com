@@ -40,10 +40,16 @@ function Header() {
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           <li>
-            <a href="https://blog.stefonalfaro.com/">Research & Development</a>
+            <a href="https://blog.stefonalfaro.com/">Blog</a>
           </li>
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="https://www.youtube.com/@SACaribbeanHoldings">YouTube</a>
+          </li>
+          <li>
+            <a href="https://github.com/stefonalfaro">GitHub</a>
+          </li>
+          <li>
+            <a href="mailto:stefonalfaro@gmail.com">Contact</a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

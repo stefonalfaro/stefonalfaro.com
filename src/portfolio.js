@@ -8,7 +8,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
@@ -23,7 +23,7 @@ const greeting = {
   username: "Stefon Alfaro",
   title: "Hi, I'm Stefon",
   subTitle: emoji(
-    "I develop software to preserve human cognition. I will integrate into your existing workflows. I look for activities where AI is demonstrably superior to humans. I look for tasks that can be shortened by automation. I create solutions that proxy business value and cognitive labor."
+    "Senior Developer for worldwide remote employment. Frontend development with Angular and Backend development with .NET or Node."
   ),
   resumeLink:
     "", // Set to empty to hide the button
@@ -33,22 +33,22 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/stefonalfaro",
+  linkedin: "",
+  gmail: "stefonalfaro@gmail.com",
+  gitlab: "",
+  facebook: "",
+  medium: "",
+  stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
-  display: false // Set true to display this section, defaults to false
+  display: true // Set true to display this section, defaults to false
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  title: "Tech Stack",
   subTitle: "I am Full Stack Software Engineer building enterprise grade applications with C#, Angular, and some other libraries and frameworks. I have worked with Third-Party Logistics, Warehousing, Transportation, and Software Development companies.",
   skills: [
     emoji("⚡ [Artificial Intelligence] OpenAI GPT4 and HuggingFace"),
@@ -64,14 +64,6 @@ https://fontawesome.com/icons?d=gatypellery */
 
   softwareSkills: [
     {
-      skillName: "HTML5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "CSS3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
       skillName: "Angular",
       fontAwesomeClassname: "fab fa-angular"
     },
@@ -82,10 +74,6 @@ https://fontawesome.com/icons?d=gatypellery */
     {
       skillName: "SQL",
       fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "Firebase",
-      fontAwesomeClassname: "fas fa-fire"
     },
     {
       skillName: "Azure",
@@ -104,8 +92,8 @@ https://fontawesome.com/icons?d=gatypellery */
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "Cloudflare",
-      fontAwesomeClassname: "fab fa-cloudflare"
+      skillName: ".NET",
+      fontAwesomeClassname: "fab fa-dotnet"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -114,7 +102,7 @@ https://fontawesome.com/icons?d=gatypellery */
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
   schools: [
     {
       schoolName: "York University",
@@ -139,12 +127,16 @@ const techStack = {
   viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Physical Windows Servers",
-      progressPercentage: "100%"
+      Stack: "C# .NET WebAPI",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Azure Cloud",
-      progressPercentage: "75%"
+      Stack: "SQLServer",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "Angular Web Application Frontend",
+      progressPercentage: "70%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -156,7 +148,7 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Backend Team Leader",
+      role: "Backend Team Leader (1.5yr)",
       company: "PP",
       companylogo: require("./assets/images/pplogo.jpg"),
       date: "Dec 2022 – Present",
@@ -168,10 +160,10 @@ const workExperiences = {
       ]
     },
     {
-      role: "Systems Analyst",
+      role: "Systems Analyst (2yr)",
       company: "DWS",
       companylogo: require("./assets/images/dwslogo.jpg"),
-      date: "Mar 2018 – Apr 2020",
+      date: "2018 – 2020",
       desc: "",
       descBullets:[
         "Reporting to the Vice President of Eastern Canada I managed four warehouses totaling 500,000 sqf.",
@@ -180,10 +172,10 @@ const workExperiences = {
       ]
     },
     {
-      role: "IT Manager",
+      role: "Fullstack Developer (4yr)",
       company: "GAPP",
       companylogo: require("./assets/images/gapplogo.jpg"),
-      date: "Mar 2016 – Dec 2018",
+      date: "2016 – 2018, 2020 to 2022",
       desc: "Reporting  to  the  President  I  managed  a  40,000sqft  warehouse  being  responsible  for  all  the  network  and computer  systems  including  servers,  domains,  websites,  security  cameras,  client  integrations,  building access  control,  email  accounts,  software  licenses,  file  share,  printers,  network,  routers,  switches,  and access  points.  Developed  a  custom  coded  Warehouse  Management  System."
     }
   ]
@@ -200,7 +192,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Professional Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
@@ -253,13 +245,13 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
 
 const blogSection = {
-  title: "Research",
+  title: "Personal Projects",
   subtitle:
     "I believe that AI, with its limitless potential and adaptability, can transcend the barriers that have long hindered human progress, leading to unprecedented increases in the quality of life for all. I devote significant time and effort to learning, exploring, and contributing to this exciting field, actively engaging in research that resonates with the hope of a brighter tomorrow.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
