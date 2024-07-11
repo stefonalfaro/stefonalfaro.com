@@ -26,7 +26,7 @@ const greeting = {
     "Senior Developer for worldwide remote employment. Seven years of general expeirence with a specialization in Angular Frontend development and .NET Backend development deployed to cloud and on-premise environments using relational and NoSQL databases."
   ),
   resumeLink:
-    "https://utfs.io/f/3ed09cae-0ea2-410d-9b6a-8dc5f49d1c27-f6dfs2.pdf", // Set to empty to hide the button
+    "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
