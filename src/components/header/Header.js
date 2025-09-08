@@ -40,6 +40,9 @@ function Header() {
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           <li>
+            <a href="https://blog.stefonalfaro.com/2025/09/08/why-me/">Why I'm the Best</a>
+          </li>
+          <li>
             <a href="https://erp.gappexpress.com/edi/">EDI/BizTalk</a>
           </li>
           <li>
