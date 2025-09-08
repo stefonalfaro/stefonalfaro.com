@@ -26,8 +26,9 @@ export default function Greeting() {
                 {greeting.title}
                 {" "}
               </h1>
-              <h1 className={isDark ? "dark-mode greeting-text greeting-text-second" : "greeting-text greeting-text-second"}>
-                {greeting.title2}</h1>
+              <h2 className={isDark ? "dark-mode greeting-text-second" : "greeting-text-second"}>
+                {greeting.title2}
+              </h2>
               <p
                 className={
                   isDark

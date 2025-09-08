@@ -39,6 +39,12 @@
   line-height: 1.1;
   color: $textColor !important;
 }
+.greeting-text-second {
+  font-size: 55px;
+  line-height: 1.1;
+  color: $textColor !important;
+  font-weight:bold;
+}
 
 .greeting-text-p {
   font-size: 30px;
@@ -87,6 +93,10 @@
   .greeting-text {
     font-size: 50px;
   }
+  .greeting-text-second {
+    font-size: 42px;
+    font-weight:bold;
+  }
   .greeting-text-p {
     font-size: 20px;
   }
@@ -104,6 +114,11 @@
     line-height: normal;
     text-align: center;
   }
+  .greeting-text-second {
+    font-size: 24px;
+    text-align: center;
+    font-weight:bold;
+  }
   .greeting-main {
     display: block;
   }
@@ -116,10 +131,4 @@
   .main {
     width: auto;
   }
-}
-
-
-.greeting-text-second {
-  margin-top: 0px;
-  padding-top: 0px;
 }
