@@ -127,6 +127,31 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+
+      {socialMediaLinks.youtube ? (
+        <a
+          href={socialMediaLinks.youtube}
+          className="icon-button youtube"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-youtube"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.reddit ? (
+        <a
+          href={socialMediaLinks.reddit}
+          className="icon-button reddit"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-reddit"></i>
+          <span></span>
+        </a>
+      ) : null}
+
     </div>
   );
 }

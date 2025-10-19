@@ -40,22 +40,13 @@ function Header() {
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           <li>
-            <a href="https://blog.stefonalfaro.com/2025/09/08/why-me/">Why I'm the Best</a>
+            <a href="https://services.stefonalfaro.com/" target="_blank">Services</a>
           </li>
           <li>
-            <a href="https://erp.gappexpress.com/edi/">EDI/BizTalk</a>
+            <a href="https://erp.gappexpress.com/" target="_blank">ERP</a>
           </li>
           <li>
-            <a href="https://erp.gappexpress.com/">ERP/WMS/TMS</a>
-          </li>
-          <li>
-            <a href="https://gappexpress.com/">Logistics</a>
-          </li>
-          <li>
-            <a href="https://blog.stefonalfaro.com/">Blog</a>
-          </li>
-          <li>
-            <a href="https://github.com/stefonalfaro">GitHub</a>
+            <a href="https://blog.stefonalfaro.com/" target="_blank">Blog</a>
           </li>
           <li>
             <a href="mailto:stefonalfaro@gmail.com">Contact</a>

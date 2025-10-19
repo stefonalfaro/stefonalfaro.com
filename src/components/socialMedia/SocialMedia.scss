@@ -68,6 +68,14 @@
   background-color: $instagram;
 }
 
+.youtube i {
+  background-color: #FF0000;
+}
+
+.reddit i {
+  background-color: #FF4500; /* Reddit orange */
+}
+
 /* Hover Transition */
 .twitter i:hover,
 .google i:hover,
@@ -78,6 +86,8 @@
 .instagram i:hover,
 .stack-overflow i:hover,
 .kaggle i:hover,
+.youtube i:hover,
+.reddit i:hover,
 .medium i:hover {
   background-color: $textColor;
 }
