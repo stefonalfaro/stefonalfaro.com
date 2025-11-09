@@ -27,7 +27,7 @@ const greeting = {
     "With over 8 years of specialized experience in logistics and supply chain technology, I architect and build mission-critical systems that power modern commerce. From developing comprehensive warehouse management platforms to implementing complex EDI integrations and government compliance systems, I bridge the gap between business requirements and technical solutions. My expertise spans the full technology stack from legacy system migrations and custom API integrations to cutting-edge AI platforms with a proven track record of delivering zero-downtime solutions for high-volume operations. Whether it's automating cross-border customs processes, building real-time inventory systems, or leading development teams on enterprise software, I bring both deep technical knowledge and real-world business understanding to every project."
   ),
   resumeLink:
-    "https://tor55ty39q.ufs.sh/f/VzFFdXTN6h2HtcXfA8EtTha34S6lipEKjPzVywXAHnWMDRdo", // Set to empty to hide the button
+    "https://tor55ty39q.ufs.sh/f/VzFFdXTN6h2HNjRk5bsoydxXDHLmYM0ghjs6i3IWUbP4lRJQ", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
