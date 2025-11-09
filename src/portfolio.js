@@ -71,23 +71,27 @@ https://fontawesome.com/icons?d=gatypellery */
   softwareSkills: [
     {
       skillName: "Angular",
-      fontAwesomeClassname: "fab fa-angular"
+      imgUrl: require("./assets/images/angular.png")
     },
     {
       skillName: "TypeScript",
-      fontAwesomeClassname: "fab fa-js"
+      imgUrl: require("./assets/images/ts.png")
     },
     {
-      skillName: "SQL",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "SQL Server",
+      imgUrl: require("./assets/images/sqlserver.png")
     },
     {
       skillName: "Azure",
-      fontAwesomeClassname: "fab fa-windows"
+      imgUrl: require("./assets/images/azure.png")
+    },
+    {
+      skillName: "AWS",
+      imgUrl: require("./assets/images/aws2.png")
     },
     {
       skillName: "Windows Server",
-      fontAwesomeClassname: "fa fa-server"
+      imgUrl: require("./assets/images/windows-server.png")
     },
     {
       skillName: "Networking",
@@ -95,11 +99,15 @@ https://fontawesome.com/icons?d=gatypellery */
     },
     {
       skillName: "Docker",
-      fontAwesomeClassname: "fab fa-docker"
+      imgUrl: require("./assets/images/docker2.png")
     },
     {
       skillName: ".NET",
-      fontAwesomeClassname: "fab fa-dotnet"
+      imgUrl: require("./assets/images/dotnet.png")
+    },
+    {
+      skillName: "EDI X12",
+      imgUrl: require("./assets/images/x12.png")
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -147,20 +155,21 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Backend Team Leader (1.5yr)",
+      role: "Backend Team Leader",
       company: "Pioneering Programmers",
       companylogo: require("./assets/images/pp.png"),
       date: "Dec 2022 – July 2024",
       desc: "",
       descBullets: [
-        "Contract  to  Kaseya  for  development  and  support  of  major  MSP  software.",
-        "Many  environments  setup  with  CI/ID  and TDD.",
-        "The  backend  is  a  .NET  WebAPI  made  in  Azure  Functions  using  CosmosDB  (NoSQL)."
+        "Led a backend team of 3 junior developers, overseeing recruitment, interviewing, mentoring, and technical guidance in an Agile/SCRUM environment.",
+        "Coordinated sprint deliverables, wrote user stories, and ensured alignment with business requirements.",
+        "Managed backend development for a high-profile Kaseya MSP software called audIT.",
+        "Designed and implemented a custom AI platform for business document interaction, delivering innovative automation solutions."
       ]
     },
     {
-      role: "Systems Analyst (2yr)",
-      company: "DWS",
+      role: "Systems Analyst",
+      company: "DWS Logistics Inc.",
       companylogo: require("./assets/images/dws.jpg"),
       date: "2018 – 2020",
       desc: "",
@@ -171,11 +180,27 @@ const workExperiences = {
       ]
     },
     {
-      role: "Fullstack Developer (4yr)",
-      company: "GAPP",
+      role: "Fullstack Developer",
+      company: "GAPP Express Inc.",
       companylogo: require("./assets/images/gapp.jpg"),
       date: "2016 – 2018, 2020 - 2022, 2025 - Present",
-      desc: "Reporting  to  the  President  I  managed  a  40,000sqft  warehouse  being  responsible  for  all  the  network  and computer  systems  including  servers,  domains,  websites,  security  cameras,  client  integrations,  building access  control,  email  accounts,  software  licenses,  file  share,  printers,  network,  routers,  switches,  and access  points.  Developed  a  custom  coded  Warehouse  Management  System."
+      descBullets: [
+        "Reporting to the President, managed comprehensive IT infrastructure of a 40,000 sqft warehouse, overseeing all network and computer systems including Active Directory and Windows servers.",
+        "Developed a custom Warehouse Management System while mobile scanners, streamlining operations.",
+        "Implemented X12 EDI integrations and participated in meetings with customers and trading partners, showcasing technical expertise and communication skills. Orchestrated and mapped inbound EDI X12 940, and outbound 945s and 856s for trading partners such as WalMart and SPS Commerce."
+      ]
+    },
+    {
+      role: "Web Developer",
+      company: "Simcoe Web Solutions",
+      companylogo: require("./assets/images/SimcoeWebSolutionsSquareL.png"),
+      date: "2014 - 2016",
+      descBullets: [
+        "Designed and developed websites for small businesses either a custom HTML5 and CSS3 or WordPress based sites.",
+        "Used WooCommerce to setup eCommerce sites and integrate with Stripe for payment processing.",
+        "Manage infrastructure through WHM/cPanel and DNS through CloudFlare.",
+        "Client facing sales position doing cold out reach to small businesses without websites."
+      ]
     }
   ]
 };

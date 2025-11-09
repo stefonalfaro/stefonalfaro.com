@@ -48,6 +48,7 @@ export default function Greeting() {
                     href={greeting.resumeLink}
                   />
                 )}
+                <Button text="UpWork" href="https://www.upwork.com/freelancers/stefonalfaro" />
               </div>
             </div>
           </div>
