@@ -60,15 +60,15 @@ const skillsSection = {
     },
     {
       title: "Backend Development",
-      description: "C#, .NET WebAPI, Entity Framework, Azure Functions, AWS Lambda, SignalR Real-time Communication"
+      description: "C#, .NET WebAPI, Entity Framework, Azure Functions, AWS Lambda, TypeScript Node, SignalR Real-time Communication"
     },
     {
       title: "Frontend Development",
-      description: "Angular, TypeScript, Responsive Web Design, Mobile-First Development"
+      description: "Angular with Responsive Web Design for Mobile compataibility."
     },
     {
       title: "System Integration",
-      description: "BizTalk Server, API Development, custom Middlewares, Legacy System Migration, Government Compliance Systems (PARS/PAPS)"
+      description: "BizTalk Server, API Development, custom Middlewares, Legacy System Migration, FTP, AS/2, Government Compliance Systems (PARS/PAPS)"
     },
     {
       title: "Cloud & DevOps",
@@ -81,6 +81,10 @@ const skillsSection = {
     {
       title: "AI & Machine Learning",
       description: "OpenAI Integration, LangChain, Custom LLM Platforms, Document Processing, Python. I have built custom RAG systems giving LLMs access to knowledge bases using Vector Databases and Embedding models."
+    },
+    {
+      title: "X12 EDI",
+      description:"My entire career has been spent working with 3rd party logistics warehousing and transportation. We receive 940s, sent 945s, I direct experience working with partners such as SPS Commerce, sending 856 Advance Ship Notices to Walmart on behalf of our customers, and connecting to custom warehouse management systems."
     },
     {
       title: "Android and iOS Apps",
@@ -145,7 +149,7 @@ const skillsSection = {
     },
     {
       skillName: "Android Apps",
-      imgUrl: require("./assets/images/googleplay.png")
+      imgUrl: require("./assets/images/googleplay-modified.png")
     },
     {
       skillName: "iOS Apps",
@@ -208,13 +212,13 @@ const workExperiences = {
       role: "Backend Team Leader",
       company: "Pioneering Programmers",
       companylogo: require("./assets/images/pp.png"),
-      date: "Dec 2022 – July 2024",
+      date: "2022 – 2024",
       desc: "",
       descBullets: [
         "Led a backend team of 3 junior developers, overseeing recruitment, interviewing, mentoring, and technical guidance in an Agile/SCRUM environment.",
-        "Coordinated sprint deliverables, wrote user stories, and ensured alignment with business requirements.",
+        "Coordinated sprint deliverables, wrote User Stories, and planned entire Epics to ensure alignment with business requirements.",
         "Managed backend development for a high-profile Kaseya MSP software called audIT.",
-        "Designed and implemented a custom AI platform for business document interaction, delivering innovative automation solutions."
+        "Designed and implemented a custom AI platform for business document interaction.",
       ]
     },
     {
@@ -224,9 +228,11 @@ const workExperiences = {
       date: "2018 – 2020",
       desc: "",
       descBullets:[
-        "Reporting to the Vice President of Eastern Canada I managed four warehouses totaling 500,000 sqf.",
-        "Centralized all the IT systems and documented the complex setup and network.",
-        "Developed custom software integrations. Looked after the firewalls and all security."
+        "Solved a complex WiFi handover issue where mobile scanners disconnected between access points, an issue no other contractor could resolve, resulting in a full-time job offer recognizing technical expertise and problem-solving skills.",
+        "Reported to the Vice President of Eastern Canada, managing IT operations across four warehouses totaling 500,000 sqft.",
+        "Led the centralization of IT systems, documenting setup and infrastructure for Active Directory and Windows servers.",
+        "Developed custom software integrations to enhance and automate business processes.",
+        "Oversaw security infrastructure, managing firewalls, site-to-site VPNs, and implementing robust measures to protect IT assets and data.",
       ]
     },
     {
@@ -235,9 +241,11 @@ const workExperiences = {
       companylogo: require("./assets/images/gapp.jpg"),
       date: "2016 – 2018, 2020 - 2022, 2025 - Present",
       descBullets: [
-        "Reporting to the President, managed comprehensive IT infrastructure of a 40,000 sqft warehouse, overseeing all network and computer systems including Active Directory and Windows servers.",
-        "Developed a custom Warehouse Management System while mobile scanners, streamlining operations.",
-        "Implemented X12 EDI integrations and participated in meetings with customers and trading partners, showcasing technical expertise and communication skills. Orchestrated and mapped inbound EDI X12 940, and outbound 945s and 856s for trading partners such as WalMart and SPS Commerce."
+        "Reported directly to the President, managing IT and software development for a 40,000 sqft warehouse and overseeing all network and computer systems including Active Directory and Windows servers.",
+        "Mentored junior developers and ensured adherence to business rules and domain-driven design principles.",
+        "Developed a custom Warehouse Management System with mobile scanner integration, streamlining operations and enabling automatic order creation from clients.",
+        "Implemented X12 EDI integrations and participated in customer meetings, orchestrating and mapping inbound EDI X12 940s and outbound 945s and 856s for trading partners such as WalMart and SPS Commerce.",
+        "Developed a QuickBooks Cloud integration to post invoices from ERP systems.",
       ]
     },
     {
@@ -246,10 +254,10 @@ const workExperiences = {
       companylogo: require("./assets/images/SimcoeWebSolutionsSquareL.png"),
       date: "2014 - 2016",
       descBullets: [
-        "Designed and developed websites for small businesses either a custom HTML5 and CSS3 or WordPress based sites.",
-        "Used WooCommerce to setup eCommerce sites and integrate with Stripe for payment processing.",
-        "Manage infrastructure through WHM/cPanel and DNS through CloudFlare.",
-        "Client facing sales position doing cold out reach to small businesses without websites."
+        "Designed and developed custom websites for small businesses using either HTML5/CSS3 or WordPress-based templates.",
+        "Configured WooCommerce for eCommerce sites, enabling clients to manage products, pricing, and inventory, and integrate with Stripe for secure payment processing.",
+        "Managed hosting infrastructure through WHM/cPanel and DNS via Cloudflare.",
+        "Performed client-facing sales and cold outreach to small businesses without websites."
       ]
     }
   ]

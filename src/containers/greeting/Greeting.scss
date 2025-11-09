@@ -103,7 +103,8 @@
 }
 @media (max-width: 768px) {
   .button-greeting-div {
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
   }
   .greeting-text {
     font-size: 30px;
