@@ -22,7 +22,7 @@ const illustration = {
 const greeting = {
   username: "Stefon Alfaro",
   title: "Senior Fullstack Developer",
-  title2:".NET, Angular, EDI Integration, Logistics Systems",
+  title2:".NET, Angular, EDI, Integration, Logistics Systems",
   subTitle: emoji(
     "With over 8 years of specialized experience in logistics and supply chain technology, I architect and build mission-critical systems that power modern commerce. From developing comprehensive warehouse management platforms to implementing complex EDI integrations and government compliance systems, I bridge the gap between business requirements and technical solutions. My expertise spans the full technology stack from legacy system migrations and custom API integrations to cutting-edge AI platforms with a proven track record of delivering zero-downtime solutions for high-volume operations. Whether it's automating cross-border customs processes, building real-time inventory systems, or leading development teams on enterprise software, I bring both deep technical knowledge and real-world business understanding to every project."
   ),
