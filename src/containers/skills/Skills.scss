@@ -65,3 +65,13 @@
     order: 2;
   }
 }
+
+.skill-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #55198b; /* or your theme color */
+}
+
+.dark-mode .skill-title {
+  color: #8b6bb7; /* lighter shade for dark mode */
+}

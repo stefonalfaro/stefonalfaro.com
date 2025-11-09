@@ -51,18 +51,45 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "",
-  subTitle: "",
+  title: "Skills and Specializations",
+  subTitle: "I architect my systems with a separate frontend and backend. My frontend development is done with Angular and my backend development is done with the .NET WebAPI. For enterprise applications I use Entity Framework as the ORM to connect to either SQL Server or Postgres. I have experience deploying and managing both on-premises and cloud so in our CI/DI pipelines we will have Development and Production instances setup to deploy on branch merges.",
   skills: [
-    emoji("⚡ [Business Systems] EDI X12 Integration, Logistics & Supply Chain, Warehouse Management, Transportation Management, Customs & Cross-Border Trade"),
-    emoji("⚡ [Backend Development] C#, .NET WebAPI, .NET Core, Entity Framework, Azure Functions, SignalR Real-time Communication"),
-    emoji("⚡ [Frontend Development] Angular, TypeScript, Responsive Web Design, Mobile-First Development"),
-    emoji("⚡ [System Integration] BizTalk Server, API Development, Legacy System Migration, Government Compliance Systems (PARS/PAPS)"),
-    emoji("⚡ [Cloud & DevOps] Azure (Functions, ServiceBus, CosmosDB), Docker, IIS Deployment, Windows Server Administration"),
-    emoji("⚡ [Database Systems] SQL Server, MySQL, CosmosDB, PostgreSQL, Database Performance Optimization, Custom Migration Scripts"),
-    emoji("⚡ [AI & Machine Learning] OpenAI Integration, LangChain, Custom LLM Platforms, Document Processing, Python, Rust"),
-    emoji("⚡ [Architecture & Leadership] Technical Team Leadership, System Architecture Design, Enterprise Software Planning, Agile/SCRUM Methodologies"),
-    emoji("⚡ [Development Tools] Visual Studio, Git, JIRA, SQL Server Management Studio, Crystal Reports, SSRS, VS Code")
+    {
+      title: "Business Systems",
+      description: "EDI X12 Integration, Logistics & Supply Chain, Warehouse Management, Transportation Management, Customs & Cross-Border Trade"
+    },
+    {
+      title: "Backend Development",
+      description: "C#, .NET WebAPI, Entity Framework, Azure Functions, AWS Lambda, SignalR Real-time Communication"
+    },
+    {
+      title: "Frontend Development",
+      description: "Angular, TypeScript, Responsive Web Design, Mobile-First Development"
+    },
+    {
+      title: "System Integration",
+      description: "BizTalk Server, API Development, custom Middlewares, Legacy System Migration, Government Compliance Systems (PARS/PAPS)"
+    },
+    {
+      title: "Cloud & DevOps",
+      description: "Azure (Functions, ServiceBus, CosmosDB, Docker), AWS (Lambda, Docker), IIS Deployment, Windows Server Administration"
+    },
+    {
+      title: "Database Systems",
+      description: "SQL Server, MySQL, CosmosDB, PostgreSQL, and Firebase. Database Performance Optimization, Custom Migration Scripts"
+    },
+    {
+      title: "AI & Machine Learning",
+      description: "OpenAI Integration, LangChain, Custom LLM Platforms, Document Processing, Python. I have built custom RAG systems giving LLMs access to knowledge bases using Vector Databases and Embedding models."
+    },
+    {
+      title: "Android and iOS Apps",
+      description: "I use the Cordova framework which allows my Angular code to be compiled into native Android .APKs and iOS .IPA files. This allows a single code base to deploy, sign, and publish Apps for both Google Play and Apple App Store."
+    },
+    {
+      title: "Payment Processing",
+      description: "I use Stripe for processing credit cards allowing you to process payments online and also setup recurring subscriptions. For eCommerce websites we use WooCommerce which integrates with Stripe and you can manage your products easily."
+    }
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -98,6 +125,10 @@ https://fontawesome.com/icons?d=gatypellery */
       fontAwesomeClassname: "fa fa-network-wired"
     },
     {
+      skillName: "Firebase",
+      imgUrl: require("./assets/images/firebase.png")
+    },
+    {
       skillName: "Docker",
       imgUrl: require("./assets/images/docker2.png")
     },
@@ -108,6 +139,18 @@ https://fontawesome.com/icons?d=gatypellery */
     {
       skillName: "EDI X12",
       imgUrl: require("./assets/images/x12.png")
+    },
+    {
+      skillName: "Android Apps",
+      imgUrl: require("./assets/images/googleplay.png")
+    },
+    {
+      skillName: "iOS Apps",
+      imgUrl: require("./assets/images/iOSApps.png")
+    },
+    {
+      skillName: "Stripe",
+      imgUrl: require("./assets/images/stripe.png")
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -295,26 +338,52 @@ const bigProjects = {
 // Achievement Section
 // Include certificates, talks etc
 const achievementSection = {
-  title: emoji("Courses and Certifications 🏆 "),
+  title: emoji("Courses and Certifications"),
   subtitle:
-    "Recent Courses and Certifications that I have done!",
+    "",
 
   achievementsCards: [
     {
-      title: "Fundamentals of TinyML",
+      title: "Harvard - Fundamentals of TinyML",
       subtitle:
         "TinyML is at the intersection of embedded Machine Learning (ML) applications, algorithms, hardware, and software. TinyML differs from mainstream machine learning (e.g., server and cloud) in that it requires not only software expertise, but also embedded-hardware expertise.",
       image: require("./assets/images/harvardLogo.png"),
       imageAlt: "Havard Logo",
       footerLink: [
         {
-          name: "HavardX TinyML1",
+          name: "HavardX TinyML1 - Completed October 29th, 2023",
           url: "https://www.harvardonline.harvard.edu/course/fundamentals-tinyml"
+        }
+      ]
+    },
+    {
+      title: "Kaggle - Advanced SQL",
+      subtitle:
+        "Take your SQL skills to the next level.",
+      image: require("./assets/images/kaggle-logo.png"),
+      imageAlt: "Havard Logo",
+      footerLink: [
+        {
+          name: "Issued by Alexis Cook on August 11, 2024",
+          url: "https://utfs.io/f/8dc6ec9c-1d74-4507-8478-44db4ed411e5-62ymtb.png"
+        }
+      ]
+    },
+    {
+      title: "Kaggle - Python",
+      subtitle:
+        "Learn the most important language for data science.",
+      image: require("./assets/images/kaggle-logo.png"),
+      imageAlt: "Havard Logo",
+      footerLink: [
+        {
+          name: "Issued by Colin Morris on August 11, 2024",
+          url: "https://utfs.io/f/ca516c7c-0555-488e-920f-b21bb1ca2e4b-17bn6b.png"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -348,17 +417,17 @@ const blogSection = {
 
 // Talks Sections
 const talkSection = {
-  title: "TALKS",
+  title: "YouTube",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    ""
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "Meet Stefon Alfaro",
+      subtitle: "Introduction to Stefon Alfaro",
+      slides_url: "",
+      event_url: "https://www.youtube.com/watch?v=AWINxI0xUHI"
     }
   ],
   display: false // Set false to hide this section, defaults to true
@@ -377,9 +446,9 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me"),
+  title: emoji("Hire Me"),
   subtitle:
-    "",
+    "My rate for hourly work is $28.50usd or $40.00cad/hr. If you have specific projects such as wanting an eCommerce website, or implementing EDI X12 for a new trading partner I can give a project total.",
   email_address: "stefonalfaro@gmail.com"
 };
 

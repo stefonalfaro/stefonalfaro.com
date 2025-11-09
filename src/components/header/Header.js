@@ -45,9 +45,9 @@ function Header() {
           <li>
             <a href="https://erp.gappexpress.com/" target="_blank">ERP</a>
           </li>
-          <li>
+          {/* <li>
             <a href="https://blog.stefonalfaro.com/" target="_blank">Blog</a>
-          </li>
+          </li> */}
           <li>
             <a href="mailto:stefonalfaro@gmail.com">Contact</a>
           </li>

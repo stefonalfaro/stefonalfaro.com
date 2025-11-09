@@ -33,7 +33,7 @@ export default function Skills() {
             </p>
             <SoftwareSkill />
             <div>
-              {skillsSection.skills.map((skills, i) => {
+              {skillsSection.skills.map((skill, i) => {
                 return (
                   <p
                     key={i}
@@ -43,7 +43,7 @@ export default function Skills() {
                         : "subTitle skills-text"
                     }
                   >
-                    {skills}
+                     <span className="skill-title">{skill.title}</span> <br />{skill.description}
                   </p>
                 );
               })}
