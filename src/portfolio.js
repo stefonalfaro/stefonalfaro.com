@@ -36,7 +36,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/stefonalfaro",
   linkedin: "",
-  gmail: "",
+  gmail: "stefonalfaro@gmail.com",
   gitlab: "",
   facebook: "",
   medium: "",
@@ -84,16 +84,19 @@ const skillsSection = {
     },
     {
       title: "Android and iOS Apps",
-      description: "I use the Cordova framework which allows my Angular code to be compiled into native Android .APKs and iOS .IPA files. This allows a single code base to deploy, sign, and publish Apps for both Google Play and Apple App Store."
+      description: "I use the Cordova framework which allows my Angular code to be compiled into native Android .APKs and iOS .IPA files. This allows a single code base to deploy, sign, and publish Apps for both Google Play and Apple App Store. I have my own Google and Apple Developer Account and understand the business process you will need to go through."
     },
     {
       title: "Payment Processing",
-      description: "I use Stripe for processing credit cards allowing you to process payments online and also setup recurring subscriptions. For eCommerce websites we use WooCommerce which integrates with Stripe and you can manage your products easily."
+      description: "I use Stripe for processing credit cards allowing you to process payments online and also setup recurring subscriptions. For eCommerce websites we use WooCommerce which integrates with Stripe and you can manage your products easily. I have done custom integrations with Stripe and understand the process of it well."
+    },
+    {
+      title: "Business Formation and International Tax Strategies",
+      description: "I have a US LCC, Canadian federal corporation, and United Kingdom Limited company. I understand the process foreign and domestic clients must go through when starting a new business along with the documentation and compliance required for opening business banks with instituions such as Mercury and Wise. For clients wishing to protect their identity I have experience using registered agents in states such as Wyoming which allow anonymous ownership, meaning you can still get your EIN number, DUNS number, and open Google and Apple developer accounts while your personal information remains protected."
     }
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gatypellery */
+  /* Make Sure to include correct Font Awesome Classname to view your icon https://fontawesome.com/icons?d=gatypellery */
 
   softwareSkills: [
     {
@@ -151,6 +154,10 @@ https://fontawesome.com/icons?d=gatypellery */
     {
       skillName: "Stripe",
       imgUrl: require("./assets/images/stripe.png")
+    },
+    {
+      skillName: "Quickbooks",
+      imgUrl: require("./assets/images/qb.png")
     }
   ],
   display: true // Set false to hide this section, defaults to true
