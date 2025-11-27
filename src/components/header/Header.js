@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -23,6 +23,20 @@ function Header() {
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+  const handleMouseEnter = (dropdownName) => {
+    setOpenDropdown(dropdownName);
+  };
+
+  const handleMouseLeave = () => {
+    setOpenDropdown(null);
+  };
+
+  const handleClick = (e, dropdownName) => {
+    e.stopPropagation();
+    setOpenDropdown(openDropdown === dropdownName ? null : dropdownName);
+  };
 
   return (
     <Headroom>
@@ -38,17 +52,68 @@ function Header() {
           htmlFor="menu-btn"
           style={{color: "white"}}
         >
-          <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
+        <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
-          <li>
-            <Link to="/Cloud">Cloud</Link>
+          <li className="dropdown" onMouseEnter={() => handleMouseEnter('cloud')} onMouseLeave={handleMouseLeave} onClick={(e) => handleClick(e, 'cloud')}>
+            <span className="dropdown-toggle">
+              Cloud <span className="dropdown-arrow">▼</span>
+            </span>
+            <ul className={`dropdown-menu ${openDropdown === 'cloud' ? 'show' : ''}`} style={{ display: openDropdown === 'cloud' ? 'block' : 'none' }} >
+              <li>
+                <Link to="/Cloud">Overview</Link>
+              </li>
+              <li>
+                <Link to="/Cloud/Azure">Azure</Link>
+              </li>
+              <li>
+                <Link to="/Cloud/AWS">AWS</Link>
+              </li>
+              <li>
+                <Link to="/Cloud/Firebase">Firebase</Link>
+              </li>
+            </ul>
           </li>
-          <li>
-            <Link to="/eCommerce">eCommerce</Link>
+          <li className="dropdown" onMouseEnter={() => handleMouseEnter('ecommerce')} onMouseLeave={handleMouseLeave} onClick={(e) => handleClick(e, 'ecommerce')}>
+            <span className="dropdown-toggle">
+              eCommerce <span className="dropdown-arrow">▼</span>
+            </span>
+            <ul className={`dropdown-menu ${openDropdown === 'ecommerce' ? 'show' : ''}`} style={{ display: openDropdown === 'ecommerce' ? 'block' : 'none' }}>
+              <li>
+                <Link to="/eCommerce">Overview</Link>
+              </li>
+              <li>
+                <Link to="/eCommerce/WooCommerce">WooCommerce</Link>
+              </li>
+              <li>
+                <Link to="/eCommerce/Shopify">Shopify</Link>
+              </li>
+              <li>
+                <Link to="/eCommerce/Stripe">Stripe</Link>
+              </li>
+            </ul>
           </li>
-          <li>
-            <Link to="/Carriers">Carriers</Link>
+          <li className="dropdown" onMouseEnter={() => handleMouseEnter('carriers')} onMouseLeave={handleMouseLeave} onClick={(e) => handleClick(e, 'carriers')}>
+            <span className="dropdown-toggle">
+              Carriers <span className="dropdown-arrow">▼</span>
+            </span>
+            <ul className={`dropdown-menu ${openDropdown === 'carriers' ? 'show' : ''}`} style={{ display: openDropdown === 'carriers' ? 'block' : 'none' }}>
+              <li>
+                <Link to="/Carriers">Overview</Link>
+              </li>
+              <li>
+                <Link to="/Carriers/CanadaPost">Canada Post</Link>
+              </li>
+              <li>
+                <Link to="/Carriers/Fedex">Fedex</Link>
+              </li>
+              <li>
+                <Link to="/Carriers/UPS">UPS</Link>
+              </li>
+              <li>
+                <Link to="/Carriers/GLS">GLS Canada</Link>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="https://services.stefonalfaro.com/" target="_blank">Services</a>
