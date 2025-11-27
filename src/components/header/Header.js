@@ -12,6 +12,8 @@ import {
   talkSection,
   achievementSection
 } from "../../portfolio";
+import { Link } from "react-router-dom";
+
 
 function Header() {
   const {isDark} = useContext(StyleContext);
@@ -40,6 +42,15 @@ function Header() {
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           <li>
+            <Link to="/Cloud">Cloud</Link>
+          </li>
+          <li>
+            <Link to="/eCommerce">eCommerce</Link>
+          </li>
+          <li>
+            <Link to="/Carriers">Carriers</Link>
+          </li>
+          <li>
             <a href="https://services.stefonalfaro.com/" target="_blank">Services</a>
           </li>
           <li>
@@ -51,12 +62,7 @@ function Header() {
           <li>
             <a href="mailto:stefonalfaro@gmail.com">Contact</a>
           </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
-          </li>
+
         </ul>
       </header>
     </Headroom>
