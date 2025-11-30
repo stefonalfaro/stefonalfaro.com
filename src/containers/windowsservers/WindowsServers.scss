@@ -1,0 +1,18 @@
+@import "../../_globalColor";
+
+body {
+  background-color: $darkBackground;
+}
+
+.dark-mode {
+  background-color: $darkBackground;
+  color: white;
+  transition: "0.1s";
+}
+
+.windowsservers {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}

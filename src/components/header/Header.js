@@ -132,6 +132,9 @@ function Header() {
               <li>
                 <Link to="/Carriers/GLS">GLS Canada</Link>
               </li>
+              <li>
+                <Link to="/Carriers/Canpar">Canpar</Link>
+              </li>
             </ul>
           </li>
           <li className="dropdown" onMouseEnter={() => handleMouseEnter('it')} onMouseLeave={handleMouseLeave} onClick={(e) => handleClick(e, 'it')}>
