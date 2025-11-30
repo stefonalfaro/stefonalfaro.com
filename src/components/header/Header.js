@@ -55,6 +55,25 @@ function Header() {
         <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
+          <li className="dropdown" onMouseEnter={() => handleMouseEnter('erp')} onMouseLeave={handleMouseLeave} onClick={(e) => handleClick(e, 'erp')}>
+            <span className="dropdown-toggle">
+              ERP <span className="dropdown-arrow">▼</span>
+            </span>
+            <ul className={`dropdown-menu ${openDropdown === 'erp' ? 'show' : ''}`} style={{ display: openDropdown === 'erp' ? 'block' : 'none' }} >
+              <li>
+                <Link to="/ERP">Overview</Link>
+              </li>
+              <li>
+                <Link to="/ERP/Warehouse-Management-Systems">Warehouse Management Systems</Link>
+              </li>
+              <li>
+                <Link to="/ERP/Transportation-Management-Systems">Transportation Management Systems</Link>
+              </li>
+              <li>
+                <Link to="/ERP/EDI">X12 EDI</Link>
+              </li>
+            </ul>
+          </li>
           <li className="dropdown" onMouseEnter={() => handleMouseEnter('cloud')} onMouseLeave={handleMouseLeave} onClick={(e) => handleClick(e, 'cloud')}>
             <span className="dropdown-toggle">
               Cloud <span className="dropdown-arrow">▼</span>
@@ -115,11 +134,27 @@ function Header() {
               </li>
             </ul>
           </li>
-          <li>
-            <a href="https://services.stefonalfaro.com/" target="_blank">Services</a>
-          </li>
-          <li>
-            <a href="https://erp.gappexpress.com/" target="_blank">ERP</a>
+          <li className="dropdown" onMouseEnter={() => handleMouseEnter('it')} onMouseLeave={handleMouseLeave} onClick={(e) => handleClick(e, 'it')}>
+            <span className="dropdown-toggle">
+              Corporate IT <span className="dropdown-arrow">▼</span>
+            </span>
+            <ul className={`dropdown-menu ${openDropdown === 'it' ? 'show' : ''}`} style={{ display: openDropdown === 'it' ? 'block' : 'none' }}>
+              <li>
+                <Link to="/IT">Overview</Link>
+              </li>
+              <li>
+                <Link to="/IT/Windows-Servers">Windows Servers</Link>
+              </li>
+              <li>
+                <Link to="/IT/Active-Directory">Active Directory</Link>
+              </li>
+              <li>
+                <Link to="/IT/Security">Security</Link>
+              </li>
+              <li>
+                <Link to="/IT/Backups">Backups</Link>
+              </li>
+            </ul>
           </li>
           {/* <li>
             <a href="https://blog.stefonalfaro.com/" target="_blank">Blog</a>
